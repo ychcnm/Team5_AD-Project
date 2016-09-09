@@ -1,0 +1,14 @@
+c:\users\mitch\documents\visual studio 2013\Projects\Team5_ADProject\BL\bin\Debug\BL.dll.config
+c:\users\mitch\documents\visual studio 2013\Projects\Team5_ADProject\BL\bin\Debug\BL.dll
+c:\users\mitch\documents\visual studio 2013\Projects\Team5_ADProject\BL\bin\Debug\BL.pdb
+c:\users\mitch\documents\visual studio 2013\Projects\Team5_ADProject\BL\bin\Debug\DL.dll
+c:\users\mitch\documents\visual studio 2013\Projects\Team5_ADProject\BL\bin\Debug\EntityFramework.dll
+c:\users\mitch\documents\visual studio 2013\Projects\Team5_ADProject\BL\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\mitch\documents\visual studio 2013\Projects\Team5_ADProject\BL\bin\Debug\Newtonsoft.Json.dll
+c:\users\mitch\documents\visual studio 2013\Projects\Team5_ADProject\BL\bin\Debug\DL.pdb
+c:\users\mitch\documents\visual studio 2013\Projects\Team5_ADProject\BL\bin\Debug\EntityFramework.xml
+c:\users\mitch\documents\visual studio 2013\Projects\Team5_ADProject\BL\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\mitch\documents\visual studio 2013\Projects\Team5_ADProject\BL\bin\Debug\Newtonsoft.Json.xml
+c:\users\mitch\documents\visual studio 2013\Projects\Team5_ADProject\BL\obj\Debug\BL.csprojResolveAssemblyReference.cache
+c:\users\mitch\documents\visual studio 2013\Projects\Team5_ADProject\BL\obj\Debug\BL.dll
+c:\users\mitch\documents\visual studio 2013\Projects\Team5_ADProject\BL\obj\Debug\BL.pdb

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5ae7424e714d4fe6a0bb14dce0b44f25" Name="Diagram1">
+        <EntityTypeShape EntityType="Team5_ADModel.Category" Width="1.5" PointX="0.75" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Team5_ADModel.CollectionPoint" Width="1.5" PointX="1.5" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Team5_ADModel.Department" Width="1.5" PointX="3.75" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Team5_ADModel.Disbursement" Width="1.5" PointX="3" PointY="25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Team5_ADModel.DisbursementDetail" Width="1.5" PointX="5.25" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="Team5_ADModel.Discrepancy" Width="1.5" PointX="6" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Team5_ADModel.DiscrepancyDetail" Width="1.5" PointX="8.25" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="Team5_ADModel.Inventory" Width="1.5" PointX="3" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="Team5_ADModel.ItemPrice" Width="1.5" PointX="5.25" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Team5_ADModel.Order" Width="1.5" PointX="3" PointY="29" IsExpanded="true" />
+        <EntityTypeShape EntityType="Team5_ADModel.OrderDetail" Width="1.5" PointX="5.25" PointY="17" IsExpanded="true" />
+        <EntityTypeShape EntityType="Team5_ADModel.Requisition" Width="1.5" PointX="6" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="Team5_ADModel.RequisitionDetail" Width="1.5" PointX="8.25" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Team5_ADModel.Retrieval" Width="1.5" PointX="8.25" PointY="17" IsExpanded="true" />
+        <EntityTypeShape EntityType="Team5_ADModel.Role" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Team5_ADModel.Shortage" Width="1.5" PointX="9" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Team5_ADModel.ShortageDetail" Width="1.5" PointX="11.25" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Team5_ADModel.StockCard" Width="1.5" PointX="5.25" PointY="35.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Team5_ADModel.Supplier" Width="1.5" PointX="3" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="Team5_ADModel.User" Width="1.5" PointX="3.75" PointY="20.625" IsExpanded="true" />
+        <AssociationConnector Association="Team5_ADModel.FK_Inventory_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="Team5_ADModel.FK_Department_CollectionPoint" ManuallyRouted="false" />
+        <AssociationConnector Association="Team5_ADModel.FK_Disbursement_Department" ManuallyRouted="false" />
+        <AssociationConnector Association="Team5_ADModel.FK_Requisition_Department" ManuallyRouted="false" />
+        <AssociationConnector Association="Team5_ADModel.FK_Retrieval_Department" ManuallyRouted="false" />
+        <AssociationConnector Association="Team5_ADModel.FK_Shortage_Department" ManuallyRouted="false" />
+        <AssociationConnector Association="Team5_ADModel.FK_Disbursement_User" ManuallyRouted="false" />
+        <AssociationConnector Association="Team5_ADModel.FK_DisbursementDetails_DisbursementDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="Team5_ADModel.FK_DisbursementDetails_Inventory" ManuallyRouted="false" />
+        <AssociationConnector Association="Team5_ADModel.FK_Discrepancy_User" ManuallyRouted="false" />
+        <AssociationConnector Association="Team5_ADModel.FK_DiscrepancyDetails_Discrepancy" ManuallyRouted="false" />
+        <AssociationConnector Association="Team5_ADModel.FK_DiscrepancyDetails_Inventory" ManuallyRouted="false" />
+        <AssociationConnector Association="Team5_ADModel.FK_ItemPrice_Inventory" ManuallyRouted="false" />
+        <AssociationConnector Association="Team5_ADModel.FK_OrderDetails_Inventory" ManuallyRouted="false" />
+        <AssociationConnector Association="Team5_ADModel.FK_RequisitionDetails_Inventory" ManuallyRouted="false" />
+        <AssociationConnector Association="Team5_ADModel.FK_Retrieval_Inventory" ManuallyRouted="false" />
+        <AssociationConnector Association="Team5_ADModel.FK_ShortageDetails_Inventory" ManuallyRouted="false" />
+        <AssociationConnector Association="Team5_ADModel.FK_StockCard_Inventory" ManuallyRouted="false" />
+        <AssociationConnector Association="Team5_ADModel.FK_ItemPrice_Supplier" ManuallyRouted="false" />
+        <AssociationConnector Association="Team5_ADModel.FK_Order_Supplier" ManuallyRouted="false" />
+        <AssociationConnector Association="Team5_ADModel.FK_OrderDetails_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="Team5_ADModel.FK_Requisition_User" ManuallyRouted="false" />
+        <AssociationConnector Association="Team5_ADModel.FK_RequisitionDetails_Requisition" ManuallyRouted="false" />
+        <AssociationConnector Association="Team5_ADModel.FK_ShortageDetails_Shortage" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

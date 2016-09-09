@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Team5_ADModelStoreContainer" CdmEntityContainer="Team5_ADEntities">
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="Team5_ADModel.Category">
+        <MappingFragment StoreEntitySet="Category">
+          <ScalarProperty Name="categoryID" ColumnName="categoryID" />
+          <ScalarProperty Name="categoryName" ColumnName="categoryName" />
+          <ScalarProperty Name="imgUrl" ColumnName="imgUrl" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CollectionPoints">
+      <EntityTypeMapping TypeName="Team5_ADModel.CollectionPoint">
+        <MappingFragment StoreEntitySet="CollectionPoint">
+          <ScalarProperty Name="collectionPointID" ColumnName="collectionPointID" />
+          <ScalarProperty Name="collectionPointName" ColumnName="collectionPointName" />
+          <ScalarProperty Name="collectionTime" ColumnName="collectionTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Departments">
+      <EntityTypeMapping TypeName="Team5_ADModel.Department">
+        <MappingFragment StoreEntitySet="Department">
+          <ScalarProperty Name="departmentCode" ColumnName="departmentCode" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="contactName" ColumnName="contactName" />
+          <ScalarProperty Name="phoneNo" ColumnName="phoneNo" />
+          <ScalarProperty Name="fax" ColumnName="fax" />
+          <ScalarProperty Name="headName" ColumnName="headName" />
+          <ScalarProperty Name="collectionPointID" ColumnName="collectionPointID" />
+          <ScalarProperty Name="representativeName" ColumnName="representativeName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Disbursements">
+      <EntityTypeMapping TypeName="Team5_ADModel.Disbursement">
+        <MappingFragment StoreEntitySet="Disbursement">
+          <ScalarProperty Name="disbursementID" ColumnName="disbursementID" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="departmentCode" ColumnName="departmentCode" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DisbursementDetails">
+      <EntityTypeMapping TypeName="Team5_ADModel.DisbursementDetail">
+        <MappingFragment StoreEntitySet="DisbursementDetails">
+          <ScalarProperty Name="disbursementDetailsID" ColumnName="disbursementDetailsID" />
+          <ScalarProperty Name="disbursementID" ColumnName="disbursementID" />
+          <ScalarProperty Name="inventoryCode" ColumnName="inventoryCode" />
+          <ScalarProperty Name="actualQuantity" ColumnName="actualQuantity" />
+          <ScalarProperty Name="neededQuantity" ColumnName="neededQuantity" />
+          <ScalarProperty Name="description" ColumnName="description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Discrepancies">
+      <EntityTypeMapping TypeName="Team5_ADModel.Discrepancy">
+        <MappingFragment StoreEntitySet="Discrepancy">
+          <ScalarProperty Name="discrepancyID" ColumnName="discrepancyID" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DiscrepancyDetails">
+      <EntityTypeMapping TypeName="Team5_ADModel.DiscrepancyDetail">
+        <MappingFragment StoreEntitySet="DiscrepancyDetails">
+          <ScalarProperty Name="discrepancyDetailsID" ColumnName="discrepancyDetailsID" />
+          <ScalarProperty Name="discrepancyID" ColumnName="discrepancyID" />
+          <ScalarProperty Name="inventoryCode" ColumnName="inventoryCode" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="totalAmount" ColumnName="totalAmount" />
+          <ScalarProperty Name="description" ColumnName="description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Inventories">
+      <EntityTypeMapping TypeName="Team5_ADModel.Inventory">
+        <MappingFragment StoreEntitySet="Inventory">
+          <ScalarProperty Name="inventoryCode" ColumnName="inventoryCode" />
+          <ScalarProperty Name="categoryID" ColumnName="categoryID" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="reorderLevel" ColumnName="reorderLevel" />
+          <ScalarProperty Name="reorderQuality" ColumnName="reorderQuality" />
+          <ScalarProperty Name="unitOfMeasure" ColumnName="unitOfMeasure" />
+          <ScalarProperty Name="location" ColumnName="location" />
+          <ScalarProperty Name="quantityInHand" ColumnName="quantityInHand" />
+          <ScalarProperty Name="image" ColumnName="image" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ItemPrices">
+      <EntityTypeMapping TypeName="Team5_ADModel.ItemPrice">
+        <MappingFragment StoreEntitySet="ItemPrice">
+          <ScalarProperty Name="itemPriceID" ColumnName="itemPriceID" />
+          <ScalarProperty Name="inventoryCode" ColumnName="inventoryCode" />
+          <ScalarProperty Name="supplierCode" ColumnName="supplierCode" />
+          <ScalarProperty Name="price" ColumnName="price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="Team5_ADModel.Order">
+        <MappingFragment StoreEntitySet="Order">
+          <ScalarProperty Name="orderID" ColumnName="orderID" />
+          <ScalarProperty Name="supplierCode" ColumnName="supplierCode" />
+          <ScalarProperty Name="orderDate" ColumnName="orderDate" />
+          <ScalarProperty Name="deliveryDate" ColumnName="deliveryDate" />
+          <ScalarProperty Name="expectedDate" ColumnName="expectedDate" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderDetails">
+      <EntityTypeMapping TypeName="Team5_ADModel.OrderDetail">
+        <MappingFragment StoreEntitySet="OrderDetails">
+          <ScalarProperty Name="orderDetailsID" ColumnName="orderDetailsID" />
+          <ScalarProperty Name="orderID" ColumnName="orderID" />
+          <ScalarProperty Name="inventoryCode" ColumnName="inventoryCode" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="totalAmount" ColumnName="totalAmount" />
+          <ScalarProperty Name="description" ColumnName="description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Requisitions">
+      <EntityTypeMapping TypeName="Team5_ADModel.Requisition">
+        <MappingFragment StoreEntitySet="Requisition">
+          <ScalarProperty Name="requisitionID" ColumnName="requisitionID" />
+          <ScalarProperty Name="departmentCode" ColumnName="departmentCode" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="type" ColumnName="type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RequisitionDetails">
+      <EntityTypeMapping TypeName="Team5_ADModel.RequisitionDetail">
+        <MappingFragment StoreEntitySet="RequisitionDetails">
+          <ScalarProperty Name="requisitionDetailsID" ColumnName="requisitionDetailsID" />
+          <ScalarProperty Name="requisitionID" ColumnName="requisitionID" />
+          <ScalarProperty Name="inventoryCode" ColumnName="inventoryCode" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+          <ScalarProperty Name="description" ColumnName="description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Retrievals">
+      <EntityTypeMapping TypeName="Team5_ADModel.Retrieval">
+        <MappingFragment StoreEntitySet="Retrieval">
+          <ScalarProperty Name="retrievalID" ColumnName="retrievalID" />
+          <ScalarProperty Name="departmentCode" ColumnName="departmentCode" />
+          <ScalarProperty Name="inventoryCode" ColumnName="inventoryCode" />
+          <ScalarProperty Name="neededQuantity" ColumnName="neededQuantity" />
+          <ScalarProperty Name="actualQuantity" ColumnName="actualQuantity" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="Team5_ADModel.Role">
+        <MappingFragment StoreEntitySet="Role">
+          <ScalarProperty Name="roleID" ColumnName="roleID" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Shortages">
+      <EntityTypeMapping TypeName="Team5_ADModel.Shortage">
+        <MappingFragment StoreEntitySet="Shortage">
+          <ScalarProperty Name="shortageID" ColumnName="shortageID" />
+          <ScalarProperty Name="departmentCode" ColumnName="departmentCode" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ShortageDetails">
+      <EntityTypeMapping TypeName="Team5_ADModel.ShortageDetail">
+        <MappingFragment StoreEntitySet="ShortageDetails">
+          <ScalarProperty Name="shortageDetailsID" ColumnName="shortageDetailsID" />
+          <ScalarProperty Name="shortageID" ColumnName="shortageID" />
+          <ScalarProperty Name="inventoryCode" ColumnName="inventoryCode" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+          <ScalarProperty Name="reason" ColumnName="reason" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StockCards">
+      <EntityTypeMapping TypeName="Team5_ADModel.StockCard">
+        <MappingFragment StoreEntitySet="StockCard">
+          <ScalarProperty Name="stockCardID" ColumnName="stockCardID" />
+          <ScalarProperty Name="inventoryCode" ColumnName="inventoryCode" />
+          <ScalarProperty Name="transactionDate" ColumnName="transactionDate" />
+          <ScalarProperty Name="issuedType" ColumnName="issuedType" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+          <ScalarProperty Name="balance" ColumnName="balance" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Suppliers">
+      <EntityTypeMapping TypeName="Team5_ADModel.Supplier">
+        <MappingFragment StoreEntitySet="Supplier">
+          <ScalarProperty Name="supplierCode" ColumnName="supplierCode" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="contactName" ColumnName="contactName" />
+          <ScalarProperty Name="phoneNo" ColumnName="phoneNo" />
+          <ScalarProperty Name="fax" ColumnName="fax" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="gstRegistrationNo" ColumnName="gstRegistrationNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="Team5_ADModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="employeeID" ColumnName="employeeID" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="departmentCode" ColumnName="departmentCode" />
+          <ScalarProperty Name="roleID" ColumnName="roleID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
