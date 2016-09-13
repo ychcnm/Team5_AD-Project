@@ -127,6 +127,11 @@
     background: url("/Image/Icons/retrieval.png ") no-repeat scroll transparent;
 }
 
+.reqHistory {
+     left: 520px;
+     background: url("/Image/Icons/history.png ") no-repeat scroll transparent;
+}
+
 .menu_text {
     text-align: center;
     top: 63px;

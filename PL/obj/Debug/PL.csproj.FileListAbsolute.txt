@@ -8,6 +8,4 @@ c:\users\mitch\documents\visual studio 2013\Projects\Team5_ADProject\PL\bin\BL.d
 c:\users\mitch\documents\visual studio 2013\Projects\Team5_ADProject\PL\bin\DL.dll
 c:\users\mitch\documents\visual studio 2013\Projects\Team5_ADProject\PL\bin\BL.pdb
 c:\users\mitch\documents\visual studio 2013\Projects\Team5_ADProject\PL\bin\DL.pdb
-c:\users\mitch\documents\visual studio 2013\Projects\Team5_ADProject\PL\bin\EntityFramework.xml
-c:\users\mitch\documents\visual studio 2013\Projects\Team5_ADProject\PL\bin\EntityFramework.SqlServer.xml
 c:\users\mitch\documents\visual studio 2013\Projects\Team5_ADProject\PL\bin\Newtonsoft.Json.xml
