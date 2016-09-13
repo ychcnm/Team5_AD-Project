@@ -14,16 +14,22 @@ namespace BL.DAO
 
         public String loginValid(String userName, String passWord)
         {
-            var user = db.Users.FirstOrDefault(u => u.name == userName);
-            if (user == null)
+            var user = from u in db.Users select u;
+            if (user.First() == null)
             {
                 return "0"; //Can't find user
             }
-            if (!user.password.Equals(passWord))
+            if (!user.First().password.Equals(passWord))
             {
                 return "1"; //Password don't match
             }
             return "2"; //success
+        }
+
+        public User findUserByName(string name)
+        {
+            var user = from u in db.Users where u.name == name select u;
+            return user.First();
         }
     }
 }

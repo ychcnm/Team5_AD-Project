@@ -154,7 +154,7 @@
     <Key>
       <PropertyRef Name="requisitionID" />
     </Key>
-    <Property Name="requisitionID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="requisitionID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="departmentCode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="userID" Type="Int32" Nullable="false" />
     <Property Name="date" Type="DateTime" Precision="3" />
@@ -168,8 +168,8 @@
     <Key>
       <PropertyRef Name="requisitionDetailsID" />
     </Key>
-    <Property Name="requisitionDetailsID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="requisitionID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="requisitionDetailsID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="requisitionID" Type="Int32" Nullable="false" />
     <Property Name="inventoryCode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="quantity" Type="Int32" Nullable="false" />
     <Property Name="description" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
@@ -244,6 +244,16 @@
     <Property Name="gstRegistrationNo" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="ItemPrices" Relationship="Self.FK_ItemPrice_Supplier" FromRole="Supplier" ToRole="ItemPrice" />
     <NavigationProperty Name="Orders" Relationship="Self.FK_Order_Supplier" FromRole="Supplier" ToRole="Order" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
   </EntityType>
   <EntityType Name="User">
     <Key>
@@ -568,6 +578,7 @@
     <EntitySet Name="ShortageDetails" EntityType="Self.ShortageDetail" />
     <EntitySet Name="StockCards" EntityType="Self.StockCard" />
     <EntitySet Name="Suppliers" EntityType="Self.Supplier" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
     <EntitySet Name="Users" EntityType="Self.User" />
     <AssociationSet Name="FK_Inventory_Category" Association="Self.FK_Inventory_Category">
       <End Role="Category" EntitySet="Categories" />

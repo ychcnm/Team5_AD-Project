@@ -7,6 +7,8 @@ using DL;
 using BL.DAO;
 using System.Data.Entity;
 using Newtonsoft.Json.Linq;
+using System.Net.Mail;
+using System.Net;
 
 namespace PL.Service
 {
@@ -24,7 +26,8 @@ namespace PL.Service
         private userEF userDAO = new userEF();
         private categoryEF categoryDAO = new categoryEF();
         private inventoryEF inventoryDAO = new inventoryEF();
-
+        private requisitionDetailEF requisitionDetailDAO = new requisitionDetailEF();
+        private requisitionEF requisitionDAO = new requisitionEF();
 
         [WebMethod(EnableSession = true)]
         public string Login(String userName, String passWord)
@@ -98,6 +101,47 @@ namespace PL.Service
             Inventory item = inventoryDAO.getEditItem(itemId);
             JObject finalJson = item.toJson();
             return finalJson.ToString();
+        }
+
+
+        [WebMethod]
+        public string getReqStationery(string categoryId)
+        {
+
+            JArray jsonArray = new JArray();
+            JObject finalJson = new JObject();
+            List<Inventory> inventoryList = new List<Inventory>();
+
+            inventoryList = inventoryDAO.getReqInventory(categoryId);
+            foreach (Inventory i in inventoryList)
+            {
+                jsonArray.Add(i.toJson());
+            }
+            finalJson.Add("itemList", jsonArray);
+            return finalJson.ToString();
+        }
+
+        [WebMethod]
+        public string makeRequisition(string jsonStr)
+        {
+            JObject portlet = JObject.Parse(jsonStr);
+            string userName = portlet["user"].ToString();
+            User user = userDAO.findUserByName(userName);
+
+            Requisition req = new Requisition();
+            req.userID = user.userID;
+            req.date = System.DateTime.Now;
+            req.departmentCode = user.departmentCode;
+            req.status = "Processing";
+            req.type = "Normal";
+
+            int rId = requisitionDAO.makeRequisition(req);
+
+            JToken list = portlet["requisitionList"];
+
+            string result = requisitionDetailDAO.makeRequisitionDetail(list, rId);
+
+            return result;
         }
     }
 }

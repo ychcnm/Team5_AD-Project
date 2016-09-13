@@ -69,8 +69,27 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Master\Main.Master" />
+    <Content Include="bin\BL.dll" />
+    <Content Include="bin\BL.pdb" />
+    <Content Include="bin\DL.dll" />
+    <Content Include="bin\DL.pdb" />
+    <Content Include="bin\EntityFramework.dll" />
+    <Content Include="bin\EntityFramework.SqlServer.dll" />
+    <Content Include="bin\EntityFramework.SqlServer.xml" />
+    <Content Include="bin\EntityFramework.xml" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\Newtonsoft.Json.xml" />
+    <Content Include="bin\PL.dll" />
+    <Content Include="bin\PL.pdb" />
+    <Content Include="Image\Icons\i_16_cart.png" />
+    <Content Include="Image\Icons\i_16_down.png" />
+    <Content Include="Image\Icons\i_16_up.png" />
+    <Content Include="Image\Icons\load.gif" />
+    <Content Include="Image\Icons\special.png" />
     <Content Include="packages.config" />
+    <Content Include="Master\storeClerk.Master" />
+    <Content Include="Master\depEmp.Master" />
+    <Content Include="bin\PL.dll.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -141,10 +160,16 @@
     <Content Include="Image\top_tooltip.png" />
     <Content Include="Image\top_tooltip_arrow.png" />
     <Content Include="Image\user_avatar.png" />
+    <Content Include="Page\depEmp\home.aspx" />
+    <Content Include="Page\depEmp\reqStationery.aspx" />
+    <Content Include="Page\depEmp\speRequisition.aspx" />
     <Content Include="Page\login.aspx" />
     <Content Include="Page\storeClerk\home.aspx" />
     <Content Include="Page\storeClerk\stationery.aspx" />
+    <Content Include="Script\block.js" />
     <Content Include="Script\bootstrap.min.js" />
+    <Content Include="Script\common.js" />
+    <Content Include="Script\depEmp\reqStationery.js" />
     <Content Include="Script\handlebars-v4.0.5.js" />
     <Content Include="Script\jquery-3.1.0.min.js" />
     <Content Include="Script\login.js" />
@@ -157,12 +182,43 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Master\Main.Master.cs">
-      <DependentUpon>Main.Master</DependentUpon>
+    <Compile Include="Master\depEmp.Master.cs">
+      <DependentUpon>depEmp.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Master\Main.Master.designer.cs">
-      <DependentUpon>Main.Master</DependentUpon>
+    <Compile Include="Master\depEmp.Master.designer.cs">
+      <DependentUpon>depEmp.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Master\storeClerk.Master.cs">
+      <DependentUpon>storeClerk.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\storeClerk.Master.designer.cs">
+      <DependentUpon>storeClerk.Master</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Page\depEmp\home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\depEmp\home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\depEmp\reqStationery.aspx.cs">
+      <DependentUpon>reqStationery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\depEmp\reqStationery.aspx.designer.cs">
+      <DependentUpon>reqStationery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\depEmp\speRequisition.aspx.cs">
+      <DependentUpon>speRequisition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\depEmp\speRequisition.aspx.designer.cs">
+      <DependentUpon>speRequisition.aspx</DependentUpon>
     </Compile>
     <Compile Include="Page\login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
@@ -201,6 +257,7 @@
       <Name>DL</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

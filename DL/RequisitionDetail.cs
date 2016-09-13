@@ -14,8 +14,8 @@ namespace DL
     
     public partial class RequisitionDetail
     {
-        public string requisitionDetailsID { get; set; }
-        public string requisitionID { get; set; }
+        public int requisitionDetailsID { get; set; }
+        public int requisitionID { get; set; }
         public string inventoryCode { get; set; }
         public int quantity { get; set; }
         public string description { get; set; }

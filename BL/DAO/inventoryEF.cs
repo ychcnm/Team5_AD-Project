@@ -33,5 +33,11 @@ namespace BL.DAO
             var item = from i in db.Inventories where i.inventoryCode == itemId select i;
             return item.First();
         }
+        public List<DL.Inventory> getReqInventory(string cid)
+        {
+            int id = Convert.ToInt32(cid);
+            var inventoryList = from i in db.Inventories where i.categoryID == id select i;
+            return inventoryList.ToList();
+        }
     }
 }

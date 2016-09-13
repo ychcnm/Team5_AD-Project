@@ -12,6 +12,7 @@
     <script src="/Script/bootstrap.min.js" type="text/javascript"></script>
     <script src="/Script/login.js" type="text/javascript"></script>
     <script src="/Script/request.js" type="text/javascript"></script>
+    <script src="/Script/block.js" type="text/javascript"></script>
 </head>
 <body>
     <form id="form1" runat="server">

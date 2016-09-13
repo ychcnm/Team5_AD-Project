@@ -12,7 +12,7 @@ namespace DL
 {
     using System;
     using System.Collections.Generic;
-    
+
     public partial class Inventory
     {
         public Inventory()
@@ -26,7 +26,7 @@ namespace DL
             this.ShortageDetails = new HashSet<ShortageDetail>();
             this.StockCards = new HashSet<StockCard>();
         }
-    
+
         public string inventoryCode { get; set; }
         public int categoryID { get; set; }
         public string description { get; set; }
@@ -38,7 +38,7 @@ namespace DL
         public string image { get; set; }
         public double price { get; set; }
         public string status { get; set; }
-    
+
         public virtual Category Category { get; set; }
         public virtual ICollection<DisbursementDetail> DisbursementDetails { get; set; }
         public virtual ICollection<DiscrepancyDetail> DiscrepancyDetails { get; set; }

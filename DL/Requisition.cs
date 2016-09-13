@@ -19,7 +19,7 @@ namespace DL
             this.RequisitionDetails = new HashSet<RequisitionDetail>();
         }
     
-        public string requisitionID { get; set; }
+        public int requisitionID { get; set; }
         public string departmentCode { get; set; }
         public int userID { get; set; }
         public Nullable<System.DateTime> date { get; set; }

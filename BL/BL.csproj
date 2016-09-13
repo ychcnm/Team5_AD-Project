@@ -43,6 +43,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -51,8 +52,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO\categoryEF.cs" />
+    <Compile Include="DAO\requisitionDetailEF.cs" />
     <Compile Include="DAO\inventoryEF.cs" />
     <Compile Include="DAO\page.cs" />
+    <Compile Include="DAO\requisitionEF.cs" />
     <Compile Include="DAO\userEF.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

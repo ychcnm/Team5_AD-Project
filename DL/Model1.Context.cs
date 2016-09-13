@@ -44,6 +44,7 @@ namespace DL
         public virtual DbSet<ShortageDetail> ShortageDetails { get; set; }
         public virtual DbSet<StockCard> StockCards { get; set; }
         public virtual DbSet<Supplier> Suppliers { get; set; }
+        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<User> Users { get; set; }
     }
 }

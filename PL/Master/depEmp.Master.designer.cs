@@ -10,7 +10,7 @@
 namespace PL.Master {
     
     
-    public partial class Main {
+    public partial class depEmp {
         
         /// <summary>
         /// head control.

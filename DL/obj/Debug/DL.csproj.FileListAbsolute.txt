@@ -7,6 +7,5 @@ c:\users\mitch\documents\visual studio 2013\Projects\Team5_ADProject\DL\bin\Debu
 c:\users\mitch\documents\visual studio 2013\Projects\Team5_ADProject\DL\bin\Debug\EntityFramework.xml
 c:\users\mitch\documents\visual studio 2013\Projects\Team5_ADProject\DL\bin\Debug\EntityFramework.SqlServer.xml
 c:\users\mitch\documents\visual studio 2013\Projects\Team5_ADProject\DL\bin\Debug\Newtonsoft.Json.xml
-c:\users\mitch\documents\visual studio 2013\Projects\Team5_ADProject\DL\obj\Debug\DL.csprojResolveAssemblyReference.cache
 c:\users\mitch\documents\visual studio 2013\Projects\Team5_ADProject\DL\obj\Debug\DL.dll
 c:\users\mitch\documents\visual studio 2013\Projects\Team5_ADProject\DL\obj\Debug\DL.pdb

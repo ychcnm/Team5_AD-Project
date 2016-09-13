@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="PL.Master.Main" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="storeClerk.master.cs" Inherits="PL.Master.storeClerk" %>
 
 <!DOCTYPE html>
 
@@ -16,6 +16,8 @@
     <script src="/Script/request.js" type="text/javascript"></script>
     <script src="/Script/handlebars-v4.0.5.js" type="text/javascript"></script>
     <script src="/Script/page.js" type="text/javascript"></script>
+    <script src="/Script/block.js" type="text/javascript"></script>
+    <script src="/Script/common.js" type="text/javascript"></script>
 </head>
 <body>
     <div class="container-fluid">
@@ -109,42 +111,26 @@
                 <ul id="menu_ul">
                     <li id="home" class="menu_item">
                         <a>
-                            <span>
-                                <img src="/Image/Icons/homepage.png" class="tab_img" />
-                            </span>
-                            <span class="tab_info">home</span>
-                        </a>
-                    </li>
-                    <li id="view" class="menu_item">
-                        <a>
-                            <span>
-                                <img src="/Image/Icons/list.png" class="tab_img" />
-                            </span>
-                            <span class="tab_info">viewlist</span>
-                        </a>
-                    </li>
-                    <li id="inventory" class="menu_item">
-                        <a>
-                            <span>
-                                <img src="/Image/Icons/inventory.png" class="tab_img" />
-                            </span>
-                            <span class="tab_info">inventory</span>
+                            <span class="menu homepage"></span>
+                            <p class="menu_text">home</p>
                         </a>
                     </li>
                     <li id="stationery" class="menu_item">
                         <a>
-                            <span>
-                                <img src="/Image/Icons/stationery.png" class="tab_img" />
-                            </span>
-                            <span class="tab_info">stationery</span>
+                            <span class="menu stationery"></span>
+                            <p class="menu_text">Manage stationery</p>
+                        </a>
+                    </li>
+                    <li id="inventory" class="menu_item">
+                        <a>
+                            <span class="menu inventory"></span>
+                            <p class="menu_text">order inventory</p>
                         </a>
                     </li>
                     <li id="retrieval" class="menu_item">
                         <a>
-                            <span>
-                                <img src="/Image/Icons/retrieval.png" class="tab_img" />
-                            </span>
-                            <span class="tab_info">retrieval</span>
+                            <span class="menu retrieval"></span>
+                            <p class="menu_text">receive inventory</p>
                         </a>
                     </li>
                 </ul>

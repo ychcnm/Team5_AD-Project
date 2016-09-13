@@ -9,13 +9,16 @@
         $("#btnLogin").on("click", function () {
             Login.JsonData = Login.getJsonData();
             if (Login.validate()) {
-                Request.Myajax(Login.url + 'Login', JSON.stringify(Login.JsonData), Login.LoginSuccess, Login.LoginError)
+                Block.show();
+                Request.Myajax(Login.url + 'Login', JSON.stringify(Login.JsonData), Login.LoginSuccess, Login.LoginError);
+
             } else {
                 $("#message").text("Username And Password are Required");
             }
         });
     },
     LoginSuccess: function (data) {
+        Block.close();
         if (data.d !== "Successful") {
             $("#message").text(data.d);
         }
@@ -23,9 +26,9 @@
 
     },
     LoginError: function () {
+        Block.close();
         $("#message").text("Unknown Error")
     }, getJsonData: function () {
-
         var jsonData = {};
         jsonData.userName = $("#userName").val();
         jsonData.passWord = $("#passWord").val();

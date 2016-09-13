@@ -1,11 +1,11 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master/Main.Master" AutoEventWireup="true" CodeBehind="stationery.aspx.cs" Inherits="PL.Page.storeClerk.stationery" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master/storeClerk.Master" AutoEventWireup="true" CodeBehind="stationery.aspx.cs" Inherits="PL.Page.storeClerk.stationery" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div id="model">
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
+            <div class="modal-dialog" style="width: 25%;">
                 <div class="modal-content">
                     <div class="widget_header">
                         <button type="button" class="close" data-dismiss="modal" style="margin-top: 1%;"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
@@ -93,7 +93,7 @@
                                 <input type="submit" value="Update" class="submitIt simple_buttons" />
                             </div>
                             <div class="col-lg-6">
-                                <input style="float: left" type="submit" value="Update" class="submitIt simple_buttons" />
+                                <input style="float: left" type="submit" value="Cancel" class="submitIt simple_buttons" />
                             </div>
                         </div>
                     </div>

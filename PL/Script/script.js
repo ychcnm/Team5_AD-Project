@@ -30,7 +30,7 @@
     $("#menu_ul").on("click", "li", function () {
         var selected = $(this);
         selected.addClass("selected");
-        var title = selected.find(".tab_info").text();
+        var title = $(this).attr("id");
         window.location = title + '.aspx';
     });
 });

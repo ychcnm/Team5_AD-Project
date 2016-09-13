@@ -14,18 +14,18 @@ namespace DL
 {
     using System;
     using System.Collections.Generic;
-    
+
     public partial class Category
     {
         public Category()
         {
             this.Inventories = new HashSet<Inventory>();
         }
-    
+
         public int categoryID { get; set; }
         public string categoryName { get; set; }
         public string imgUrl { get; set; }
-    
+
         public virtual ICollection<Inventory> Inventories { get; set; }
 
 
